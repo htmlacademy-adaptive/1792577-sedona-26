@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <a class="header__logo" href="index.html">
+        <img src="./img/logo.svg" width="185" height="96" alt="Седона">
+      </a>
+      <nav class="nav">
+        <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="nav__wrapper">
+          <ul class="nav__list">
+            <li class="nav__item nav__item--current">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Форма отзыва</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      </header>
+      <main class="main-form">
+        <h1 class="visually-hidden">Отправте нам свой отзыв</h1>
+        <div class="main-form__wrapper">
+          <div class="form-desc">
+            <p class="form-desc__title">Оставьте свой отзыв</p>
+            <p class="form-desc__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </div>
+          <form class="form" action="https://echo.htmlacademy.ru">
+            <div class="form__wrapper">
+              <div class="form__container form__user-name">
+                <fieldset class="user-name">
+                  <div class="name">
+                    <p class="name__title form-title">Имя*</p>
+                    <input class="name__form form-input" type="text" name="name" placeholder="Петр">
+                  </div>
+                  <div class="surname">
+                    <p class="surname__title form-title">Фамилия*</p>
+                    <input class="surname__form form-input" type="text" name="surname" placeholder="Пустота">
+                  </div>
+                  <div class="patronymic">
+                    <p class="patronymic__title form-title">Отчество</p>
+                    <input class="patronymic__form form-input" type="text" name="patronymic" placeholder="Викторович">
+                  </div>
+                </fieldset>
+              </div>
+               <div class="form__container form__contact">
+                 <fieldset class="contact">
+                  <div class="phone-number">
+                    <p class="phone-number__title form-title">Контактный телефон*:</p>
+                    <input class="phone-number__form form-input" type="text" name="phone" placeholder="Введите телефон">
+                  </div>
+                  <div class="e-mail">
+                    <p class="e-mail__title form-title">Электронная почта*:</p>
+                    <input class="e-mail__form form-input" type="text" name="e-mail" placeholder="Введите e-mail">
+                  </div>
+                 </fieldset>
+               </div>
+               <div class="form__container form__impression">
+                 <fieldset class="impression">
+                   <legend class="impression__title form-title">
+                    Вaше Общее впечатление:
+                   </legend>
+                   <div class="impression__container">
+                     <label class="impression__radio">
+                       <input class="impression__radio-form" type="radio" name="impression" checked>
+                       <span class="impression__text">Скорее положительное</span>
+                     </label>
+                     <label class="impression__radio">
+                      <input class="impression__radio-form" type="radio" name="impression">
+                      <span class="impression__text">Скорее отрицательное</span>
+                    </label>
+                    <label class="impression__radio">
+                      <input class="impression__radio-form" type="radio" name="impression">
+                      <span class="impression__text">Затрудняюсь ответить</span>
+                    </label>
+                   </div>
+                 </fieldset>
+               </div>
+               <div class="form__container form__attractions">
+                 <fieldset class="attractions">
+                   <legend class="attractions__title form__title">Посещенные достопримечательности:</legend>
+                   <div class="attractions__container">
+                     <label class="attractions__checkbox">
+                       <input class="attractions__checkbox-form" type="checkbox" name="devil-bridge" checked>
+                       <span class="attractions__checkbox-text">Мост Дьявола</span>
+                      </label>
+                      <label class="attractions__checkbox">
+                        <input class="attractions__checkbox-form" type="checkbox" name="mount bell" checked>
+                        <span class="attractions__checkbox-text">Гора-Колокол</span>
+                       </label>
+                       <label class="attractions__checkbox">
+                        <input class="attractions__checkbox-form" type="checkbox" name="slide park" checked>
+                        <span class="attractions__checkbox-text">Слайд-парк</span>
+                       </label>
+                       <label class="attractions__checkbox">
+                        <input class="attractions__checkbox-form" type="checkbox" name="red-rocks">
+                        <span class="attractions__checkbox-text">Красные скалы</span>
+                       </label>
+                   </div>
+                 </fieldset>
+                 <div class="form__container form__discription">
+                 <fieldset class="discription">
+                   <legend class="discription__title form__title">Опишите свои эмоции:</legend>
+                   <textarea class="discription__coment" name="discription__coment"><span class="discription__desc">Опишите подробно все свои восторги </span></textarea>
+                 </fieldset>
+                 </div>
+               </div>
+            </div>
+            <button class="form__button button" type="button">Отправить отзыв</button>
+            <span class="form__desc">* — обязательные поля</span>
+          </form>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__hashtag hashtag">
+            <p class="hashtag-content">#visitsedona</p>
+          </div>
+          <div class="footer__social social">
+            <span class="visually-hidden">Мы в соцсетях</span>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte button" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--telegram button" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы на youtube</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__copyright copyright">
+            <p class="copyright__text">Разработано</p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+          </div>
+        </div>
+      </footer>
+    </body>
+  </html>
