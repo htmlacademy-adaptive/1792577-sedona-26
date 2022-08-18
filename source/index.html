@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
@@ -16,16 +17,16 @@
       <div class="nav__wrapper">
         <ul class="nav__list">
           <li class="nav__item nav__item--current">
-            <a href="#">Главная</a>
+            <a class="nav__link" href="#">Главная</a>
           </li>
           <li class="nav__item">
-            <a href="catalog.html">Фото и видео</a>
+            <a class="nav__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="nav__item">
-            <a href="form.html">Форма отзыва</a>
+            <a class="nav__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="nav__item">
-            <a href="#">HTML Academy</a>
+            <a class="nav__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -35,13 +36,19 @@
     <h1 class="visually-hidden">О Седоне</h1>
     <div class="main-index__wrapper">
       <div class="description">
+        <div class="discription__image">
+          <img src="./img/welcome-index.svg.svg" width="282" height="214" alt="Добро пожаловать!">
+        </div>
+        <div class="description__slogan">
         <p class="description__text">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="description__desc">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
       </div>
       <section class="reasons">
         <h2 class="visually-hidden">Причины для поездки</h2>
         <div class="reasons__wrapper">
-          <div class="reason town">
+          <div class="reason">
+          <div class="reason__card town">
             <p class="reason__title town__title">Настоящий городок</p>
             <span class="reason__number town__number">— №1 —</span>
             <p class="reason__text town__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
@@ -61,7 +68,7 @@
               <p class="sub-item__text">Не только китайского, но и местного производства!</p>
             </div>
           </div>
-          <div class="reason bridge">
+          <div class="reason__card bridge">
             <h3 class="reason__title bridge__title ">Там есть мост Дьявола</h3>
             <span class="reason__number bridge__number">— №2 —</span>
             <p class="reason__text bridge__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
@@ -72,16 +79,17 @@
             <span class="reason__number square__number">— №3 —</span>
             <p class="reason__text square__text">Все интересные места находятся очень близко</p>
           </div>
-          <div class="reason road">
+          <div class="reason__card road">
             <h3 class="reason__title road__title ">Красивая дорога</h3>
             <span class="reason__number road__number">— №4 —</span>
             <p class="reason__text road__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
-          <div class="reason tourist">
+          <div class="reason__card tourist">
             <h3 class="reason__title tourist__title ">Мало туристов</h3>
             <span class="reason__number tourist__number">— №5 —</span>
             <p class="reason__text tourist__text">Большинство едет в гранд каньон и толпится там</p>
           </div>
+        </div>
         </div>
       </section>
     </div>
@@ -106,16 +114,13 @@
         <span class="visually-hidden">Мы в соцсетях</span>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte button" href="https://vk.com/htmlacademy"><span
-                class="visually-hidden">Мы в Вконтакте</span></a>
+            <a class="social__link social__link--vkontakte button" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram button" href="https://t.me/htmlacademy"><span
-                class="visually-hidden">Мы в Телеграме</span></a>
+            <a class="social__link social__link--telegram button" href="https://t.me/htmlacademy">Мы в Телеграме</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru"><span
-                class="visually-hidden">Мы на youtube</span></a>
+            <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru">Мы на youtube</a>
           </li>
         </ul>
       </div>
