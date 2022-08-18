@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
@@ -16,16 +17,16 @@
       <div class="nav__wrapper">
         <ul class="nav__list">
           <li class="nav__item nav__item--current">
-            <a href="index.html">Главная</a>
+            <a class="nav__link"  href="index.html">Главная</a>
           </li>
           <li class="nav__item">
-            <a href="#">Фото и видео</a>
+            <a class="nav__link"  href="#">Фото и видео</a>
           </li>
           <li class="nav__item">
-            <a href="form.html">Форма отзыва</a>
+            <a class="nav__link"  href="form.html">Форма отзыва</a>
           </li>
           <li class="nav__item">
-            <a href="#">HTML Academy</a>
+            <a class="nav__link"  href="#">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -35,6 +36,9 @@
     <h1 class="visually-hidden">Фотографии Седоны</h1>
     <div class="main-catalog__wrapper">
       <div class="catalog-desc">
+        <div class="catalog-desc__image">
+          <img src="./img/sedona.svg" width="282" height="214" alt="Седона">
+        </div>
         <p class="catalog-desc__title">Фото и видео</p>
         <p class="catalog-desc__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
           политике и экономике.</p>
@@ -104,16 +108,13 @@
         <span class="visually-hidden">Мы в соцсетях</span>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte button" href="https://vk.com/htmlacademy"><span
-                class="visually-hidden">Мы в Вконтакте</span></a>
+            <a class="social__link social__link--vkontakte button" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram button" href="https://t.me/htmlacademy"><span
-                class="visually-hidden">Мы в Телеграме</span></a>
+            <a class="social__link social__link--telegram button" href="https://t.me/htmlacademy">Мы в Телеграме</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru"><span
-                class="visually-hidden">Мы на youtube</span></a>
+            <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru">Мы на youtube</a>
           </li>
         </ul>
       </div>
