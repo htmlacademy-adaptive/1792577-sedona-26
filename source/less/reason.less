@@ -1,13 +1,23 @@
+.reasons {
+  width: 320px;
+}
+
 .town,
 .bridge {
-  background-color: #81b3d2;
-  color: #ffffff;
+  background-color: @basic;
+  color: @white;
+}
+
+.town {
+  background-image: url("../img/triangle-mobile-town.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .square,
 .road,
 .tourist {
-  background-color: #eeeeee;
+  background-color: @grey;
 }
 
 .reason__title {
@@ -23,6 +33,7 @@
   font-size: 14px;
   line-height: 21px;
   text-align: center;
+  padding: 114px;
 }
 
 .reason__text {
@@ -31,4 +42,69 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.reason__card-texts {
+  padding: 50px 20px;
+}
+
+.sub-items {
+  margin: 23px 18px 50px;
+}
+
+.sub-item__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.sub-item__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .reasons {
+    width: 768px;
+  }
+
+  .reason {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .reason__title {
+    font-size: 21px;
+  }
+
+  .reason__card {
+    display: flex;
+  }
+
+  .town {
+    background-image: none;
+    grid-column: 1/4;
+  }
+
+  .bridge {
+    grid-column: 1/4;
+  }
+
+  .sub-items {
+    display: flex;
+    grid-column: 1/4;
+  }
+
+  .sub-item__title {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reasons {
+    width: 1200px;
+  }
 }

@@ -3,6 +3,7 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .form__title {
@@ -12,20 +13,14 @@
   text-transform: uppercase;
 }
 
-.form-input-name {
+.form-input {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   align-items: center;
-  background-color: #f2f2f2;
-}
-
-.form-input-name::-webkit-input-placeholder {
-  color: #000000;
-}
-
-.form-input-name::-moz-placeholder {
-  color: #000000;
+  background-color: @light-grey;
+  border: none;
+  padding: 15px 80px 15px 15px;
 }
 
 .form-input-contact {
@@ -33,15 +28,7 @@
   font-size: 18px;
   line-height: 26px;
   align-items: center;
-  background-color: #f2f2f2;
-}
-
-.form-input-contact::-webkit-input-placeholder {
-  color: #a9a9a9;
-}
-
-.form-input-contact::-moz-placeholder {
-  color: #a9a9a9;
+  background-color: @light-grey;
 }
 
 .form__text-radio,
@@ -52,20 +39,73 @@
 }
 
 .form__coment {
-  background-color: #f2f2f2;
+  background-color: @light-grey;
 }
 
-.form__coment::-webkit-input-placeholder {
-  color: #a9a9a9;
-}
-
-.form__coment::-moz-placeholder {
-  color: #a9a9a9;
-}
-
-.form__additionally {
+.form__end-additionally {
   font-weight: 400;
   font-size: 12px;
   line-height: 21px;
   color: #c2c2c2;
+  margin-left: 170px;
+}
+
+.form__end-button {
+  padding: 18px 34px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .form__wrapper {
+    display: grid;
+    width: 648px;
+    grid-template-columns: 324px 324px;
+    gap: 50px;
+    margin: 0 auto;
+  }
+
+  .form__impression {
+    grid-column: 1/-1;
+    margin: 0 auto;
+  }
+
+  .form__attractions {
+    grid-column: 1/-1;
+    margin: 0 auto;
+  }
+
+  .form__text {
+    grid-column: 1/-1;
+    margin: 0 auto;
+  }
+
+  .form__end {
+    display: flex;
+    justify-content: space-between;
+    width: 648px;
+  }
+
+  .form__end-button {
+    padding: 18px 49px;
+    margin: 0;
+  }
+
+  .form__end-additionally {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__wrapper {
+    display: grid;
+    width: 960px;
+    grid-template-columns: 480px 480px;
+    margin: 0 auto;
+  }
+
+  .form__end-button {
+    padding: 18px 58px;
+  }
 }

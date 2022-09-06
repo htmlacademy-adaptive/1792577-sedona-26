@@ -1,13 +1,8 @@
-.discription__image {
-  background-image: url("../img/index-background.jpg");
-  background-color: #81b3d3;
-  background-repeat: no-repeat;
-  min-width: 320px;
-  min-height: 386px;
-}
-
 .description__slogan {
-  margin: 39px 18px 33px;
+  padding: 39px 18px 33px;
+  background-image: url("../img/triangle-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .description__text {
@@ -24,4 +19,24 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .description__slogan {
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .description__text {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .description__slogan {
+    width: 484px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
