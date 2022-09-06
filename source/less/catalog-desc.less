@@ -1,11 +1,3 @@
-.catalog-desc__image {
-  background-image: url("../img/index-background.jpg");
-  background-color: #81b3d3;
-  background-repeat: no-repeat;
-  min-width: 320px;
-  min-height: 214px;
-}
-
 .catalog-desc__title {
   font-weight: 700;
   font-size: 21px;
@@ -20,4 +12,28 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.catalog-desc__image-position {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-desc__title {
+    font-size: 30px;
+  }
+
+  .catalog-desc__text {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-desc {
+    width: 458px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

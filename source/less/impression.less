@@ -1,0 +1,16 @@
+.impression {
+  border: none;
+}
+
+.impression__container {
+  display: grid;
+  grid-column: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .impression__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

@@ -5,127 +5,142 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body class="page__body">
-  <header class="header">
-    <a class="header__logo" href="index.html">
-      <img src="./img/logo.svg" width="185" height="96" alt="Седона">
-    </a>
-    <nav class="nav">
-      <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="nav__wrapper">
-        <ul class="nav__list">
-          <li class="nav__item nav__item--current">
-            <a class="nav__link"  href="index.html">Главная</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link"  href="#">Фото и видео</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link"  href="form.html">Форма отзыва</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link"  href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main class="main-catalog">
-    <h1 class="visually-hidden">Фотографии Седоны</h1>
-    <div class="main-catalog__wrapper">
-      <div class="catalog-desc">
-        <div class="catalog-desc__image">
-          <img src="./img/sedona.svg" width="282" height="214" alt="Седона">
+<body>
+  <div class="page__body">
+    <header class="header">
+      <a class="header__logo" href="index.html">
+        <img src="./img/logo.svg" width="185" height="96" alt="Седона">
+      </a>
+      <nav class="nav">
+        <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="nav__wrapper">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--current" href="#">Фото и видео</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
         </div>
-        <p class="catalog-desc__title">Фото и видео</p>
-        <p class="catalog-desc__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
-          политике и экономике.</p>
+      </nav>
+    </header>
+    <main class="catalog">
+      <h1 class="visually-hidden">Фотографии Седоны</h1>
+      <div class="catalog__image">
+        <img class="catalog__image-position" src="./img/sedona.svg" width="282" height="214" alt="Седона">
       </div>
-      <section class="photos">
-        <h2 class="visually-hidden">Фотографии пользователей</h2>
-        <div class="photos__wrapper">
-          <div class="photo-card sunset">
-            <img class="photo-card__image sunset__image" src="./img/sunset.jpg" width="280" height="280"
-              alt="Пользовательская фотография заката">
-            <p class="photo-card__description">Неродные простры</p>
-            <p class="photo-card__autor">Автор фото: <span class="photo-card__autor-name">Борис</span></p>
-            <div class="photo-card__like counter">
-              <button class="counter__icon" type="button"></button>
-              <span class="counter__number">1350</span>
-            </div>
-          </div>
-          <div class="photo-card cactus">
-            <img class="photo-card__image cactus__image" src="./img/cactus.jpg" width="280" height="280"
-              alt="Пользовательская фотография заката">
-            <p class="photo-card__description">Местная растительность</p>
-            <p class="photo-card__autor">Автор фото: <span class="photo-card__autor-name">Сергей</span></p>
-            <div class="photo-card__like counter">
-              <button class="counter__icon" type="button"></button>
-              <span class="counter__number">143</span>
-            </div>
-          </div>
-          <div class="photo-card serpentine">
-            <img class="photo-card__image serpentine__image" src="./img/serpentine.jpg" width="280" height="280"
-              alt="Пользовательская фотография заката">
-            <p class="photo-card__description">Дорога на север</p>
-            <p class="photo-card__autor">Автор фото: <span class="photo-card__autor-name">Петр</span></p>
-            <div class="photo-card__like counter">
-              <button class="counter__icon" type="button"></button>
-              <span class="counter__number">96</span>
-            </div>
-          </div>
-          <div class="photo-card devil-bridge">
-            <img class="photo-card__image devil-bridge__image" src="./img/devil-bridge.png" width="280" height="280"
-              alt="Пользовательская фотография заката">
-            <p class="photo-card__description">Мост дьявола</p>
-            <p class="photo-card__autor">Автор фото: <span class="photo-card__autor-name">Антон</span></p>
-            <div class="photo-card__like counter">
-              <button class="counter__icon" type="button"></button>
-              <span class="counter__number">254</span>
-            </div>
-          </div>
+      <div class="catalog__wrapper">
+        <div class="catalog-desc">
+          <p class="catalog-desc__title">Фото и видео</p>
+          <p class="catalog-desc__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+            политике и экономике.</p>
         </div>
-      </section>
-      <section class="video">
-        <h2 class="visually-hidden">Видео из Седоны</h2>
-        <div class="video__wrapper">
-          <p class="video__title">Все еще сомневаетесь?</p>
-          <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
-          </p>
-          <video width="280" height="177" poster="./img/video-poster.jpg"></video>
+        <section class="photos">
+          <h2 class="visually-hidden">Фотографии пользователей</h2>
+          <div class="photos__wrapper">
+            <div class="photo-card sunset">
+              <img class="photo-card__image sunset__image" src="./img/sunset.jpg" width="280" height="280"
+                alt="Пользовательская фотография заката">
+              <div class="photo-card__info">
+                <p class="photo-card__description">Неродные простры</p>
+                <p class="photo-card__autor">Автор фото: <span class="photo-card__autor-name">Борис</span></p>
+                <div class="photo-card__like counter">
+                  <button class="counter__icon" type="button"></button>
+                  <span class="counter__number">1350</span>
+                </div>
+              </div>
+            </div>
+            <div class="photo-card cactus">
+              <img class="photo-card__image cactus__image" src="./img/cactus.jpg" width="280" height="280"
+                alt="Пользовательская фотография заката">
+              <div class="photo-card__info">
+                <p class="photo-card__description">Местная растительность</p>
+                <p class="photo-card__autor">Автор фото: <span class="photo-card__autor-name">Сергей</span></p>
+                <div class="photo-card__like counter">
+                  <button class="counter__icon" type="button"></button>
+                  <span class="counter__number">143</span>
+                </div>
+              </div>
+            </div>
+            <div class="photo-card serpentine">
+              <img class="photo-card__image serpentine__image" src="./img/serpentine.jpg" width="280" height="280"
+                alt="Пользовательская фотография заката">
+              <div class="photo-card__info">
+                <p class="photo-card__description">Дорога на север</p>
+                <p class="photo-card__autor">Автор фото: <span class="photo-card__autor-name">Петр</span></p>
+                <div class="photo-card__like counter">
+                  <button class="counter__icon" type="button"></button>
+                  <span class="counter__number">96</span>
+                </div>
+              </div>
+            </div>
+            <div class="photo-card devil-bridge">
+              <img class="photo-card__image devil-bridge__image" src="./img/devil-bridge.png" width="280" height="280"
+                alt="Пользовательская фотография заката">
+              <div class="photo-card__info">
+                <p class="photo-card__description">Мост дьявола</p>
+                <p class="photo-card__autor">Автор фото: <span class="photo-card__autor-name">Антон</span></p>
+                <div class="photo-card__like counter">
+                  <button class="counter__icon" type="button"></button>
+                  <span class="counter__number">254</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="video">
+          <h2 class="visually-hidden">Видео из Седоны</h2>
+          <div class="video__wrapper">
+            <div class="video__wrapper-text">
+              <p class="video__title">Все еще сомневаетесь?</p>
+              <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
+                раз!
+              </p>
+            </div>
+            <video class="video__content" width="280" height="177" poster="./img/video-poster.jpg"></video>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__hashtag hashtag">
+          <p class="hashtag-content">#visitsedona</p>
         </div>
-      </section>
-    </div>
-  </main>
-  <footer class="footer">
-    <div class="footer__wrapper">
-      <div class="footer__hashtag hashtag">
-        <p class="hashtag-content">#visitsedona</p>
+        <div class="footer__social social">
+          <span class="visually-hidden">Мы в соцсетях</span>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы на
+                youtube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
+              Academy</span></a>
+        </div>
       </div>
-      <div class="footer__social social">
-        <span class="visually-hidden">Мы в соцсетях</span>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte button" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram button" href="https://t.me/htmlacademy">Мы в Телеграме</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru">Мы на youtube</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
-            Academy</span></a>
-      </div>
-    </div>
 
-  </footer>
+    </footer>
+  </div>
 </body>
 
 </html>

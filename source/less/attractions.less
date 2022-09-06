@@ -1,0 +1,16 @@
+.attractions {
+  border: none;
+}
+
+.attractions__container {
+  display: grid;
+  grid-column: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .attractions__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
