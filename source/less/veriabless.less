@@ -51,10 +51,12 @@ body {
   overflow: hidden;
 }
 
-.page__body {
-  display: flex;
-  flex-direction: column;
-  width: 1200px;
-  margin: 0 auto;
-  box-shadow: 0 0 20px 0 #808080;
+@media (min-width: @desktop-width) {
+  .page__body {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px 0 #808080;
+  }
 }
