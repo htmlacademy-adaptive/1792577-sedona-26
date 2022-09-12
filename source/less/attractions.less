@@ -3,14 +3,55 @@
 }
 
 .attractions__container {
-  display: grid;
-  grid-column: 1fr;
-  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.attractions__checkbox {
+  margin-bottom: 36px;
+}
+
+.attractions__checkbox-text {
+  margin-left: 62px;
+}
+
+.attractions__checkbox-visually {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: @light-grey;
+  border-radius: 4px;
+}
+
+.attractions__checkbox-form[type="checkbox"]:checked +
+.attractions__checkbox-visually::after {
+  content: "";
+  width: 22px;
+  height: 16px;
+  position: absolute;
+  top: 15px;
+  left: 13px;
+  background-image: url("../img/tick.svg");
 }
 
 @media (min-width: @tablet-width) {
   .attractions__container {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+
+  .attractions__checkbox {
+    width: 224px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attractions__container {
+    width: 960px;
   }
 }
