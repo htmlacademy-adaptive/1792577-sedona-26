@@ -1,5 +1,5 @@
 .main-form__image {
-  background-image: url("../img/triangle-mobile.png"), url("../img/background.jpg");
+  background-image: url("../img/triangle-mobile.png"), url("../img/background.webp");
   background-position: 0 157px, 0 -140px;
   background-color: @basic;
   background-repeat: no-repeat;
@@ -7,6 +7,11 @@
   margin-left: auto;
   margin-right: auto;
   width: 320px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/triangle-mobile@2x.png"), url("../img/background-mobile@2x.webp");
+    background-size: 320px auto;
+  }
 }
 
 .main-form__image-position {
@@ -21,7 +26,7 @@
 
 @media (min-width: @tablet-width) {
   .main-form__image {
-    background-image: url("../img/triangle-tablet.png"), url("../img/background-tablet.jpg");
+    background-image: url("../img/triangle-tablet.png"), url("../img/background-tablet.webp");
     background-color: @basic;
     background-repeat: no-repeat;
     width: 768px;
@@ -30,6 +35,11 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/triangle-tablet@2x.png"), url("../img/background-tablet@2x.webp");
+      background-size: 768px auto;
+    }
   }
 
   .main-form__wrapper {
@@ -40,7 +50,7 @@
 
 @media (min-width: @desktop-width) {
   .main-form__image {
-    background-image: url("../img/triangle-desktop.png"), url("../img/background-desktop.jpg");
+    background-image: url("../img/triangle-desktop.png"), url("../img/background-desktop.webp");
     background-color: @basic;
     background-repeat: no-repeat;
     width: 1200px;
@@ -49,6 +59,11 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/triangle-desktop@2x.png"), url("../img/background-desktop@2x.webp");
+      background-size: 1200px auto;
+    }
   }
 
   .main-form__wrapper {
