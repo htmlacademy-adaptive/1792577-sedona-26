@@ -1,5 +1,12 @@
 .contact {
   border: none;
+  position: relative;
+  margin-bottom: 49px;
+}
+
+.contact__input-text {
+  padding: 15px;
+  width: 250px;
 }
 
 .contact__input-text::-moz-placeholder {
@@ -8,4 +15,49 @@
 
 .contact__input-text::-webkit-input-placeholder {
   color: #a9a9a9;
+}
+
+.contact__phone-image {
+  position: absolute;
+  right: 11px;
+  top: 42px;
+}
+
+.contact__e-mail-image {
+  position: absolute;
+  right: 11px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .contact {
+    width: 298px;
+  }
+
+  .contact__action {
+    margin-left: -42px;
+  }
+
+  .contact__input-text {
+    padding: 16px 58px 15px 15px;
+  }
+
+  .contact__phone-image,
+  .contact__e-mail-image {
+    right: 43px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact {
+    width: 418px;
+  }
+
+  .contact__action {
+    margin-left: -42px;
+  }
+
+  .contact__input-text {
+    width: 312px;
+  }
 }

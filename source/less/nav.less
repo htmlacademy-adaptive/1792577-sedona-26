@@ -13,8 +13,8 @@
 
 .nav__toggle {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 1px;
+  right: 14px;
   z-index: 2;
   width: 35px;
   height: 35px;
@@ -52,7 +52,7 @@
   box-shadow: 0 8px 0 0 #b3d1e4, 0 16px 0 0 #b3d1e4;
 }
 
-.nav__toggle::before:active {
+.nav--closed .nav__toggle::before:active {
   background-color: #b9e8f2;
   box-shadow: 0 8px 0 0 #b9e8f2, 0 16px 0 0 #b9e8f2;
 }
@@ -60,9 +60,9 @@
 .nav--opened .nav__toggle::before {
   content: "";
   position: absolute;
-  top: 14px;
-  left: -4px;
-  width: 36px;
+  top: 25px;
+  left: 5px;
+  width: 25px;
   height: 4px;
   background-color: @white;
   transform: rotate(45deg);
@@ -72,9 +72,9 @@
 .nav--opened .nav__toggle::after {
   content: "";
   position: absolute;
-  top: 14px;
-  left: -4px;
-  width: 36px;
+  top: 25px;
+  left: 4px;
+  width: 26px;
   height: 4px;
   background-color: @white;
   transform: rotate(-45deg);
@@ -104,6 +104,10 @@
   padding: 17px 21px 12px;
   border-bottom: 1px solid #679fa8;
   border-top: 1px solid #9ac2db;
+}
+
+.last-link {
+  margin-bottom: -171px;
 }
 
 @media (max-width: @mobile-width-only) {
@@ -136,17 +140,22 @@
   .nav__group-first {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    width: 326px;
   }
 
   .nav__group-second {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    width: 307px;
   }
 
   .nav__link {
     color: @black;
     border-bottom: none;
     border-top: none;
+    padding: 19px 25px;
   }
 
   .nav__link--current {
@@ -161,6 +170,14 @@
 @media (min-width: @desktop-width) {
   .nav {
     width: 1200px;
+  }
+
+  .nav__group-first {
+    width: 500px;
+  }
+
+  .nav__group-second {
+    width: 500px;
   }
 
   .nav__list {

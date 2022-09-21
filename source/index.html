@@ -4,57 +4,87 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="ico" href="favicon.ico">
+  <link rel="ico" href="./favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/source/img/favicon/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="./css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
   <svg style="display: none;">
-    <symbol id="house" viewBox="0 0 75 73" >
-        <path d="M29.5 65.3H45.5V41.4H29.5V65.3ZM42.6 62.4H32.4V44.3H42.5V62.4H42.6Z" fill="#81B3D2"/>
-        <path d="M72.6 39.4L74.7 37.3L64.8 27.4V0.4H51V13.6L37.3 0L0 37.4L2.1 39.5L9.9 31.7V69.5H6V72.4H69.9V69.5H64.8V31.6L72.6 39.4ZM53.9 3.4H61.8V24.5L53.9 16.6V3.4ZM61.9 69.4H12.9V28.7L37.3 4.2L61.8 28.7V69.4H61.9Z" fill="#81B3D2"/>
-        <path d="M29.8 27.2C29.8 31.5 33.3 35 37.5 35C41.8 35 45.3 31.5 45.3 27.2C45.3 22.9 41.8 19.5 37.5 19.5C33.2 19.5 29.8 22.9 29.8 27.2ZM37.5 22.2C40.2 22.2 42.5 24.4 42.5 27.2C42.5 29.9 40.3 32.2 37.5 32.2C34.8 32.2 32.5 30 32.5 27.2C32.5 24.5 34.8 22.2 37.5 22.2Z" fill="#81B3D2"/>
-        <path d="M19.9 41.4H16.9V45.3H19.9V41.4Z" fill="#81B3D2"/>
-        <path d="M25.8 41.4H22.8V45.3H25.8V41.4Z" fill="#81B3D2"/>
-        <path d="M19.9 47.4H16.9V51.3H19.9V47.4Z" fill="#81B3D2"/>
-        <path d="M25.8 47.4H22.8V51.3H25.8V47.4Z" fill="#81B3D2"/>
-        <path d="M51.8 41.4H48.8V45.3H51.8V41.4Z" fill="#81B3D2"/>
-        <path d="M57.8 41.4H54.8V45.3H57.8V41.4Z" fill="#81B3D2"/>
-        <path d="M51.8 47.4H48.8V51.3H51.8V47.4Z" fill="#81B3D2"/>
-        <path d="M57.8 47.4H54.8V51.3H57.8V47.4Z" fill="#81B3D2"/>
+    <symbol id="house" viewBox="0 0 75 73">
+      <path d="M29.5 65.3H45.5V41.4H29.5V65.3ZM42.6 62.4H32.4V44.3H42.5V62.4H42.6Z" fill="#81B3D2" />
+      <path
+        d="M72.6 39.4L74.7 37.3L64.8 27.4V0.4H51V13.6L37.3 0L0 37.4L2.1 39.5L9.9 31.7V69.5H6V72.4H69.9V69.5H64.8V31.6L72.6 39.4ZM53.9 3.4H61.8V24.5L53.9 16.6V3.4ZM61.9 69.4H12.9V28.7L37.3 4.2L61.8 28.7V69.4H61.9Z"
+        fill="#81B3D2" />
+      <path
+        d="M29.8 27.2C29.8 31.5 33.3 35 37.5 35C41.8 35 45.3 31.5 45.3 27.2C45.3 22.9 41.8 19.5 37.5 19.5C33.2 19.5 29.8 22.9 29.8 27.2ZM37.5 22.2C40.2 22.2 42.5 24.4 42.5 27.2C42.5 29.9 40.3 32.2 37.5 32.2C34.8 32.2 32.5 30 32.5 27.2C32.5 24.5 34.8 22.2 37.5 22.2Z"
+        fill="#81B3D2" />
+      <path d="M19.9 41.4H16.9V45.3H19.9V41.4Z" fill="#81B3D2" />
+      <path d="M25.8 41.4H22.8V45.3H25.8V41.4Z" fill="#81B3D2" />
+      <path d="M19.9 47.4H16.9V51.3H19.9V47.4Z" fill="#81B3D2" />
+      <path d="M25.8 47.4H22.8V51.3H25.8V47.4Z" fill="#81B3D2" />
+      <path d="M51.8 41.4H48.8V45.3H51.8V41.4Z" fill="#81B3D2" />
+      <path d="M57.8 41.4H54.8V45.3H57.8V41.4Z" fill="#81B3D2" />
+      <path d="M51.8 47.4H48.8V51.3H51.8V47.4Z" fill="#81B3D2" />
+      <path d="M57.8 47.4H54.8V51.3H57.8V47.4Z" fill="#81B3D2" />
     </symbol>
-    <symbol id="eat" viewBox="0 0 77 69" >
-        <path d="M71.9 46H4.3C1.9 46 0 48 0 50.3V53.8C0 56.1 1.9 58 4.3 58H5.3V59C5.3 64.5 9.8 68.9 15.2 68.9H61C66.5 68.9 70.9 64.4 70.9 59V58H71.9C74.2 58 76.2 56.1 76.2 53.7V50.2C76.2 48 74.3 46 71.9 46ZM68 59C68 62.8 64.9 65.9 61.1 65.9H15.1C11.3 65.9 8.2 62.8 8.2 59V58H68V59ZM73.2 53.7C73.2 54.4 72.6 55 71.9 55H4.3C3.6 55 3 54.4 3 53.7V50.2C3 49.6 3.6 49 4.3 49H72C72.7 49 73.3 49.6 73.3 50.3V53.7H73.2Z" fill="#81B3D2"/>
-        <path d="M16.2 37.9L21.6 41.9L27.1 37.9L32.6 41.9L38.1 37.9L43.5 41.9L49 37.9L54.5 41.9L60 37.9L65.5 41.9L71.8 37.2L70.1 34.8L65.5 38.1L60 34.1L54.5 38.1L49 34.1L43.5 38.1L38.1 34.1L32.6 38.1L27.1 34.1L21.6 38.1L16.2 34.1L10.7 38.1L6.10005 34.8L4.30005 37.2L10.7 41.9L16.2 37.9Z" fill="#81B3D2"/>
-        <path d="M70.9 31.1C70.9 30.5 71 28.5 70.9 28.1C70.2 12.5 55.7999 0 38.0999 0C20.3999 0 5.89995 12.5 5.19995 28.1C5.19995 28.5 5.19995 30.5 5.19995 31.1H70.9ZM38.0999 3C54.0999 3 67.3 14.2 67.9 28.1H8.19995C8.89995 14.2 22.0999 3 38.0999 3Z" fill="#81B3D2"/>
-        <path d="M38.1 17C39.2045 17 40.1 16.1046 40.1 15C40.1 13.8954 39.2045 13 38.1 13C36.9954 13 36.1 13.8954 36.1 15C36.1 16.1046 36.9954 17 38.1 17Z" fill="#81B3D2"/>
-        <path d="M30.1 12.1C31.2045 12.1 32.1 11.2045 32.1 10.1C32.1 8.99541 31.2045 8.09998 30.1 8.09998C28.9954 8.09998 28.1 8.99541 28.1 10.1C28.1 11.2045 28.9954 12.1 30.1 12.1Z" fill="#81B3D2"/>
-        <path d="M46.1 12.1C47.2045 12.1 48.1 11.2045 48.1 10.1C48.1 8.99541 47.2045 8.09998 46.1 8.09998C44.9954 8.09998 44.1 8.99541 44.1 10.1C44.1 11.2045 44.9954 12.1 46.1 12.1Z" fill="#81B3D2"/>
+    <symbol id="eat" viewBox="0 0 77 69">
+      <path
+        d="M71.9 46H4.3C1.9 46 0 48 0 50.3V53.8C0 56.1 1.9 58 4.3 58H5.3V59C5.3 64.5 9.8 68.9 15.2 68.9H61C66.5 68.9 70.9 64.4 70.9 59V58H71.9C74.2 58 76.2 56.1 76.2 53.7V50.2C76.2 48 74.3 46 71.9 46ZM68 59C68 62.8 64.9 65.9 61.1 65.9H15.1C11.3 65.9 8.2 62.8 8.2 59V58H68V59ZM73.2 53.7C73.2 54.4 72.6 55 71.9 55H4.3C3.6 55 3 54.4 3 53.7V50.2C3 49.6 3.6 49 4.3 49H72C72.7 49 73.3 49.6 73.3 50.3V53.7H73.2Z"
+        fill="#81B3D2" />
+      <path
+        d="M16.2 37.9L21.6 41.9L27.1 37.9L32.6 41.9L38.1 37.9L43.5 41.9L49 37.9L54.5 41.9L60 37.9L65.5 41.9L71.8 37.2L70.1 34.8L65.5 38.1L60 34.1L54.5 38.1L49 34.1L43.5 38.1L38.1 34.1L32.6 38.1L27.1 34.1L21.6 38.1L16.2 34.1L10.7 38.1L6.10005 34.8L4.30005 37.2L10.7 41.9L16.2 37.9Z"
+        fill="#81B3D2" />
+      <path
+        d="M70.9 31.1C70.9 30.5 71 28.5 70.9 28.1C70.2 12.5 55.7999 0 38.0999 0C20.3999 0 5.89995 12.5 5.19995 28.1C5.19995 28.5 5.19995 30.5 5.19995 31.1H70.9ZM38.0999 3C54.0999 3 67.3 14.2 67.9 28.1H8.19995C8.89995 14.2 22.0999 3 38.0999 3Z"
+        fill="#81B3D2" />
+      <path
+        d="M38.1 17C39.2045 17 40.1 16.1046 40.1 15C40.1 13.8954 39.2045 13 38.1 13C36.9954 13 36.1 13.8954 36.1 15C36.1 16.1046 36.9954 17 38.1 17Z"
+        fill="#81B3D2" />
+      <path
+        d="M30.1 12.1C31.2045 12.1 32.1 11.2045 32.1 10.1C32.1 8.99541 31.2045 8.09998 30.1 8.09998C28.9954 8.09998 28.1 8.99541 28.1 10.1C28.1 11.2045 28.9954 12.1 30.1 12.1Z"
+        fill="#81B3D2" />
+      <path
+        d="M46.1 12.1C47.2045 12.1 48.1 11.2045 48.1 10.1C48.1 8.99541 47.2045 8.09998 46.1 8.09998C44.9954 8.09998 44.1 8.99541 44.1 10.1C44.1 11.2045 44.9954 12.1 46.1 12.1Z"
+        fill="#81B3D2" />
     </symbol>
     <symbol id="present" viewBox="0 0 63 76">
-        <path d="M60.2 22.1237H60.1H35.8C49.4 15.3237 50.5 11.0237 50 8.62371C48.9 4.72371 44.4 1.72371 40.2 3.32371C34.7 5.42371 33.2 13.6237 31.7 19.5237C29.8 13.5237 28 5.92371 23.7 2.02371C22.5 0.923705 20.7 -0.176294 18 0.0237057C14 0.423706 8.3 5.32371 10.7 10.8237C12.9 16.1237 20.2 19.5237 25.1 22.2237H2.8C1.2 22.2237 0 23.5237 0 25.0237V36.2237C0 37.8237 1.3 39.0237 2.8 39.0237H3.1V75.0237H60.1V39.0237H60.2C61.8 39.0237 63 37.7237 63 36.2237V25.0237C63 23.4237 61.7 22.1237 60.2 22.1237ZM41.8 5.82371C43.9 5.52371 46.7 7.12371 47 9.02371C47.4 11.7237 43.7 14.2237 42 15.3237C39.5 17.0237 37.1 17.9237 34.8 19.3237C35.6 15.6237 37.3 6.42371 41.8 5.82371ZM19.2 15.6237C17 14.1237 12.8 11.2237 12.9 7.92371C13 4.32371 18.6 1.42371 21.6 4.12371C25.4 7.42371 27.2 15.1237 28.6 20.5237C25.4 18.9237 22.4 17.7237 19.2 15.6237ZM25.1 72.0237H6V39.0237H25.1V72.0237ZM25.1 36.0237H3V25.1237H25.1V36.0237ZM35.1 72.0237H28V25.1237H35.1V72.0237ZM57.1 72.0237H38.1V39.0237H57.2V72.0237H57.1ZM60 36.0237H38.1V25.1237H60V36.0237Z" fill="#81B3D2"/>
+      <path
+        d="M60.2 22.1237H60.1H35.8C49.4 15.3237 50.5 11.0237 50 8.62371C48.9 4.72371 44.4 1.72371 40.2 3.32371C34.7 5.42371 33.2 13.6237 31.7 19.5237C29.8 13.5237 28 5.92371 23.7 2.02371C22.5 0.923705 20.7 -0.176294 18 0.0237057C14 0.423706 8.3 5.32371 10.7 10.8237C12.9 16.1237 20.2 19.5237 25.1 22.2237H2.8C1.2 22.2237 0 23.5237 0 25.0237V36.2237C0 37.8237 1.3 39.0237 2.8 39.0237H3.1V75.0237H60.1V39.0237H60.2C61.8 39.0237 63 37.7237 63 36.2237V25.0237C63 23.4237 61.7 22.1237 60.2 22.1237ZM41.8 5.82371C43.9 5.52371 46.7 7.12371 47 9.02371C47.4 11.7237 43.7 14.2237 42 15.3237C39.5 17.0237 37.1 17.9237 34.8 19.3237C35.6 15.6237 37.3 6.42371 41.8 5.82371ZM19.2 15.6237C17 14.1237 12.8 11.2237 12.9 7.92371C13 4.32371 18.6 1.42371 21.6 4.12371C25.4 7.42371 27.2 15.1237 28.6 20.5237C25.4 18.9237 22.4 17.7237 19.2 15.6237ZM25.1 72.0237H6V39.0237H25.1V72.0237ZM25.1 36.0237H3V25.1237H25.1V36.0237ZM35.1 72.0237H28V25.1237H35.1V72.0237ZM57.1 72.0237H38.1V39.0237H57.2V72.0237H57.1ZM60 36.0237H38.1V25.1237H60V36.0237Z"
+        fill="#81B3D2" />
     </symbol>
     <symbol id="vk" viewBox="0 0 48 48">
-        <rect width="48" height="48" fill="#81B3D2"/>
-        <g clip-path="url(#clip0_44858_962)">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M35.45 17.948C35.616 17.402 35.45 17 34.655 17H32.03C31.362 17 31.054 17.347 30.887 17.73C30.887 17.73 29.552 20.926 27.661 23.002C27.049 23.604 26.771 23.795 26.437 23.795C26.27 23.795 26.019 23.604 26.019 23.057V17.948C26.019 17.292 25.835 17 25.279 17H21.151C20.734 17 20.483 17.304 20.483 17.593C20.483 18.214 21.429 18.358 21.526 20.106V23.904C21.526 24.737 21.373 24.888 21.039 24.888C20.149 24.888 17.984 21.677 16.699 18.003C16.45 17.288 16.198 17 15.527 17H12.9C12.15 17 12 17.347 12 17.73C12 18.412 12.89 21.8 16.145 26.281C18.315 29.341 21.37 31 24.153 31C25.822 31 26.028 30.632 26.028 29.997V27.684C26.028 26.947 26.186 26.8 26.715 26.8C27.105 26.8 27.772 26.992 29.33 28.467C31.11 30.216 31.403 31 32.405 31H35.03C35.78 31 36.156 30.632 35.94 29.904C35.702 29.18 34.852 28.129 33.725 26.882C33.113 26.172 32.195 25.407 31.916 25.024C31.527 24.533 31.638 24.314 31.916 23.877C31.916 23.877 35.116 19.451 35.449 17.948H35.45Z" fill="white"/>
-        </g>
-        <defs>
+      <rect width="48" height="48" fill="#81B3D2" />
+      <g clip-path="url(#clip0_44858_962)">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M35.45 17.948C35.616 17.402 35.45 17 34.655 17H32.03C31.362 17 31.054 17.347 30.887 17.73C30.887 17.73 29.552 20.926 27.661 23.002C27.049 23.604 26.771 23.795 26.437 23.795C26.27 23.795 26.019 23.604 26.019 23.057V17.948C26.019 17.292 25.835 17 25.279 17H21.151C20.734 17 20.483 17.304 20.483 17.593C20.483 18.214 21.429 18.358 21.526 20.106V23.904C21.526 24.737 21.373 24.888 21.039 24.888C20.149 24.888 17.984 21.677 16.699 18.003C16.45 17.288 16.198 17 15.527 17H12.9C12.15 17 12 17.347 12 17.73C12 18.412 12.89 21.8 16.145 26.281C18.315 29.341 21.37 31 24.153 31C25.822 31 26.028 30.632 26.028 29.997V27.684C26.028 26.947 26.186 26.8 26.715 26.8C27.105 26.8 27.772 26.992 29.33 28.467C31.11 30.216 31.403 31 32.405 31H35.03C35.78 31 36.156 30.632 35.94 29.904C35.702 29.18 34.852 28.129 33.725 26.882C33.113 26.172 32.195 25.407 31.916 25.024C31.527 24.533 31.638 24.314 31.916 23.877C31.916 23.877 35.116 19.451 35.449 17.948H35.45Z"
+          fill="white" />
+      </g>
+      <defs>
         <clipPath id="clip0_44858_962">
-        <rect width="24" height="24" fill="white" transform="translate(12 12)"/>
+          <rect width="24" height="24" fill="white" transform="translate(12 12)" />
         </clipPath>
-        </defs>
+      </defs>
     </symbol>
     <symbol id="telegram" viewBox="0 0 48 48">
-        <rect width="48" height="48" fill="#81B3D2"/>
-        <path d="M34.4393 16.6223L31.2705 31.566C31.0313 32.6205 30.408 32.883 29.5223 32.3865L24.6938 28.8285L22.3643 31.0695C22.1063 31.3275 21.891 31.5428 21.3938 31.5428L21.741 26.6258L30.6893 18.54C31.0785 18.1935 30.6045 18.0008 30.0848 18.348L19.0223 25.314L14.2598 23.823C13.224 23.4998 13.2053 22.7873 14.4758 22.29L33.1035 15.1133C33.966 14.79 34.7205 15.3053 34.4393 16.623V16.6223Z" fill="white"/>
+      <rect width="48" height="48" fill="#81B3D2" />
+      <path
+        d="M34.4393 16.6223L31.2705 31.566C31.0313 32.6205 30.408 32.883 29.5223 32.3865L24.6938 28.8285L22.3643 31.0695C22.1063 31.3275 21.891 31.5428 21.3938 31.5428L21.741 26.6258L30.6893 18.54C31.0785 18.1935 30.6045 18.0008 30.0848 18.348L19.0223 25.314L14.2598 23.823C13.224 23.4998 13.2053 22.7873 14.4758 22.29L33.1035 15.1133C33.966 14.79 34.7205 15.3053 34.4393 16.623V16.6223Z"
+        fill="white" />
     </symbol>
     <symbol id="youtube" viewBox="0 0 48 48">
-        <rect width="48" height="48" fill="#81B3D2"/>
-        <path d="M31.1813 17H16.8133C15.3062 17 14 18.3 14 19.8V28.1C14 29.7 15.3062 31 16.8133 31H31.1813C32.7889 31 33.9946 29.7 33.9946 28.2V19.8C34.095 18.3 32.7889 17 31.1813 17ZM21.0333 27.4V20.6L27.8656 24L21.0333 27.4Z" fill="white"/>
+      <rect width="48" height="48" fill="#81B3D2" />
+      <path
+        d="M31.1813 17H16.8133C15.3062 17 14 18.3 14 19.8V28.1C14 29.7 15.3062 31 16.8133 31H31.1813C32.7889 31 33.9946 29.7 33.9946 28.2V19.8C34.095 18.3 32.7889 17 31.1813 17ZM21.0333 27.4V20.6L27.8656 24L21.0333 27.4Z"
+        fill="white" />
     </symbol>
     <symbol id="htmlacademy" viewBox="0 0 27 35">
-        <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+      <path
+        d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+        fill="currentColor" />
     </symbol>
   </svg>
   <div class="page__body">
@@ -79,7 +109,7 @@
                 <a class="nav__link" href="form.html">Форма отзыва</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">HTML Academy</a>
+                <a class="nav__link last-link" href="#">HTML Academy</a>
               </li>
             </div>
           </ul>
@@ -89,8 +119,12 @@
     <main class="index">
       <h1 class="visually-hidden">О Седоне</h1>
       <div class="index__image">
-        <img class="index__image-position" src="./img/welcome-index.svg.svg" width="282" height="214"
-          alt="Добро пожаловать!">
+        <picture>
+          <source media="(min-width: 768px)"
+            srcset="./img/welcome-index-tablet.png 1x, ./img/welcome-index-tablet@2x.png" width="461" height="350">
+          <img class="index__image-position" src="./img/welcome-index.png" srcset="./img/welcome-index@2x.png"
+            width="282" height="214" alt="Добро пожаловать!">
+        </picture>
       </div>
       <div class="index__wrapper">
         <div class="description">
@@ -104,68 +138,80 @@
           <div class="reasons__wrapper">
             <div class="reason">
               <div class="reason__card town">
-                <div class="reason__card-texts">
+                <div class="reason__card-texts town__card-text">
                   <p class="reason__title town__title">Настоящий городок</p>
                   <span class="reason__number town__number">— №1 —</span>
                   <p class="reason__text town__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="./img/town-desktop.jpg 1x, ./img/town-desktop@2x.jpg 2x" width="800" height="256" >
-                  <source media="(min-width: 768px)" srcset="./img/town-tablet.jpg 1x, ./img/town-tablet@2x.jpg 2x" width="512" height="256">
-                <img class="town__image" src="./img/town-mobile.jpg" width="320" height="260" srcset="./img/town-mobile@2x.jpg 2x" alt="Фотография городка">
+                  <source media="(min-width: 1200px)" srcset="./img/town-desktop.jpg 1x, ./img/town-desktop@2x.jpg 2x"
+                    width="800" height="256">
+                  <source media="(min-width: 768px)" srcset="./img/town-tablet.jpg 1x, ./img/town-tablet@2x.jpg 2x"
+                    width="512" height="256">
+                  <img class=" reason__image town__image" src="./img/town-mobile.jpg" width="320" height="260"
+                    srcset="./img/town-mobile@2x.jpg 2x" alt="Фотография городка">
                 </picture>
               </div>
               <div class="sub-items">
                 <div class="sub-item">
-                  <svg class="sub-item__image house" width="75" height="75">
+                  <svg class="sub-item__image house" width="40" height="40">
                     <use xlink:href="#house"></use>
                   </svg>
-                  <h3 class="sub-item__title">Жилье</h3>
-                  <p class="sub-item__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                  <div class="sub-item__container-text">
+                    <h3 class="sub-item__title">Жилье</h3>
+                    <p class="sub-item__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                  </div>
                 </div>
                 <div class="sub-item">
-                  <svg class="sub-item__image eat" width="76" height="68">
+                  <svg class="sub-item__image eat" width="40" height="40">
                     <use xlink:href="#eat"></use>
                   </svg>
-                  <h3 class="sub-item__title">Еда</h3>
-                  <p class="sub-item__text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+                  <div class="sub-item__container-text eat-container">
+                    <h3 class="sub-item__title">Еда</h3>
+                    <p class="sub-item__text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+                  </div>
                 </div>
                 <div class="sub-item">
-                  <svg class="sub-item__image present" width="63" height="75">
+                  <svg class="sub-item__image present" width="40" height="40">
                     <use xlink:href="#present"></use>
                   </svg>
-                  <h3 class="sub-item__title">Сувениры</h3>
-                  <p class="sub-item__text">Не только китайского, но и местного производства!</p>
+                  <div class="sub-item__container-text present-container">
+                    <h3 class="sub-item__title">Сувениры</h3>
+                    <p class="sub-item__text">Не только китайского, но и местного производства!</p>
+                  </div>
                 </div>
               </div>
               <div class="reason__card bridge">
-                <div class="reason__card-texts">
+                <div class="reason__card-texts bridge__card-text">
                   <h3 class="reason__title bridge__title ">Там есть мост Дьявола</h3>
                   <span class="reason__number bridge__number">— №2 —</span>
                   <p class="reason__text bridge__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="./img/bridge-desktop.jpg 1x, ./img/bridge-desktop@2x.jpg 2x" width="800" height="256" >
-                  <source media="(min-width: 768px)" srcset="./img/bridge-tablet.jpg 1x, ./img/bridge-tablet@2x.jpg 2x" width="512" height="256">
-                <img class="town__image" src="./img/bridge-mobile.jpg" width="320" height="260" srcset="./img/bridge-mobile@2x.jpg 2x" alt="Фотография Моста Дьявола">
+                  <source media="(min-width: 1200px)"
+                    srcset="./img/bridge-desktop.jpg 1x, ./img/bridge-desktop@2x.jpg 2x" width="800" height="256">
+                  <source media="(min-width: 768px)" srcset="./img/bridge-tablet.jpg 1x, ./img/bridge-tablet@2x.jpg 2x"
+                    width="512" height="256">
+                  <img class="reason__image bridge__image" src="./img/bridge-mobile.jpg" width="320" height="260"
+                    srcset="./img/bridge-mobile@2x.jpg 2x" alt="Фотография Моста Дьявола">
                 </picture>
               </div>
               <div class="reason__card square">
-                <div class="reason__card-texts">
+                <div class="reason__card-text">
                   <h3 class="reason__title square__title ">Небольшая площадь</h3>
                   <span class="reason__number square__number">— №3 —</span>
                   <p class="reason__text square__text">Все интересные места находятся очень близко</p>
                 </div>
               </div>
               <div class="reason__card road">
-                <div class="reason__card-texts">
+                <div class="reason__card-text">
                   <h3 class="reason__title road__title ">Красивая дорога</h3>
                   <span class="reason__number road__number">— №4 —</span>
                   <p class="reason__text road__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </div>
               </div>
               <div class="reason__card tourist">
-                <div class="reason__card-texts">
+                <div class="reason__card-text">
                   <h3 class="reason__title tourist__title ">Мало туристов</h3>
                   <span class="reason__number tourist__number">— №5 —</span>
                   <p class="reason__text tourist__text">Большинство едет в гранд каньон и толпится там</p>
@@ -179,7 +225,7 @@
         <h2 class="visually-hidden">Забронировать отель</h2>
         <div class="booking__wrapper">
           <div class="booking__container-text">
-            <p class="booking__title">Заинтерисовались?</p>
+            <p class="booking__title">Заинтересовались?</p>
             <p class="booking__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
               Седоне</p>
           </div>
@@ -191,9 +237,12 @@
       <div class="maps">
         <div class="maps__wrapper">
           <picture>
-            <source media="(min-width: 1200px)" srcset="./img/map-desktop.jpg 1x, ./img/map-desktop@2x.jpg 2x" width="1200" height="350" >
-            <source media="(min-width: 768px)" srcset="./img/map-tablet.jpg 1x, ./img/map-tablet@2x.jpg 2x" width="768" height="350">
-          <img class="maps-image" src="./img/map-mobile.jpg" width="320" height="350" srcset="./img/map-mobile@2x.jpg 2x" alt="Местоположение Седоны">
+            <source media="(min-width: 1200px)" srcset="./img/map-desktop.jpg 1x, ./img/map-desktop@2x.jpg 2x"
+              width="1200" height="350">
+            <source media="(min-width: 768px)" srcset="./img/map-tablet.jpg 1x, ./img/map-tablet@2x.jpg 2x" width="768"
+              height="350">
+            <img class="maps-image" src="./img/map-mobile.jpg" width="320" height="350"
+              srcset="./img/map-mobile@2x.jpg 2x" alt="Местоположение Седоны">
           </picture>
         </div>
       </div>
@@ -234,16 +283,16 @@
         </div>
         <div class="footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <p class="copyright__text">Разработано</p>
-              <svg class="footer__copyright-image htmlacademy" width="26" height="34">
-                <use xlink:href="#htmlacademy"></use>
-              </svg>
-            </a>
+            <p class="copyright__text">Разработано</p>
+            <svg class="copyright__image htmlacademy" width="26" height="34">
+              <use xlink:href="#htmlacademy"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
   </div>
-  <script src="./js/script.js"></script>
+  <script src="./js/script.min.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 .user-name {
   border: none;
+  margin-bottom: 56px;
 }
 
 .user-name__input-text::-moz-placeholder {
@@ -8,4 +9,14 @@
 
 .user-name__input-text::-webkit-input-placeholder {
   color: @black;
+}
+
+.user-name__input-text {
+  width: 250px;
+}
+
+@media (min-width: @desktop-width) {
+  .user-name__input-text {
+    width: 400px;
+  }
 }

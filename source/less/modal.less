@@ -27,6 +27,7 @@
 }
 
 .modal-correct {
+  display: none;
   background-color: @white;
   width: 320px;
   position: absolute;
@@ -37,7 +38,7 @@
 }
 
 .modal-correct__wrapper {
-  padding: 40px;
+  padding: 29px;
   background-color: @white;
   font-size: 18px;
   line-height: 26px;
@@ -49,6 +50,7 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  margin: 12px auto 25px;
 }
 
 .modal-error__text {
@@ -57,36 +59,43 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  padding: 0 12px;
 }
 
 .modal-error__button {
-  padding: 18px 64px 14px;
+  padding: 18px 75px 14px;
   margin-left: auto;
   margin-right: auto;
   display: block;
+  font-size: 18px;
 }
 
 .modal-correct__title {
   font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.modal-correct__text {
-  font-weight: 400;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+.modal-correct__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 20px;
+  margin-bottom: 68px;
 }
 
 .modal-correct__button {
-  padding: 18px 30px 14px;
+  padding: 18px 64px 14px;
   margin-left: auto;
   margin-right: auto;
   display: block;
+  font-size: 16px;
+  box-shadow: 0 0 0 31px #f2f2f2;
 }
 
 @media (min-width: @tablet-width) {
@@ -98,10 +107,16 @@
   .modal-error__title {
     font-size: 30px;
     line-height: 40px;
+    padding: 0 40px;
+  }
+
+  .modal-error__text {
+    margin-bottom: 47px;
   }
 
   .modal-error__button {
-    padding: 18px 108px 13px;
+    padding: 18px 123px 13px;
+    font-size: 19px;
   }
 
   .modal-correct {
@@ -114,7 +129,14 @@
     line-height: 26px;
   }
 
+  .modal-correct__text {
+    padding: 0 85px;
+    margin-bottom: 98px;
+  }
+
   .modal-correct__button {
-    padding: 18px 140px 13px;
+    padding: 18px 161px 13px;
+    font-size: 18px;
+    box-shadow: -55px 0 0 31px #f2f2f2, 55px 0 0 31px #f2f2f2;
   }
 }

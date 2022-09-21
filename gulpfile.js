@@ -37,23 +37,26 @@ export const html = () => {
 
 // Scripts
 
-export const scripts = () => {
+const scripts = () => {
   return gulp.src('source/js/script.js')
     .pipe(terser())
+    .pipe(rename('script.min.js'))
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
-}
+};
+
+// Copy favicon
+
+const ico = () => {
+  return gulp.src('*.ico')
+    .pipe(gulp.dest('build'));
+};
 
 // Images
 
-export const optimizeImages = () => {
+export const images = () => {
   return gulp.src('source/img/*.{png,jpg}')
     .pipe(squoosh())
-    .pipe(gulp.dest('build/img'))
-}
-
-export const copyImages = () => {
-  return gulp.src('source/img/*.{png,jpg}')
     .pipe(gulp.dest('build/img'))
 }
 
@@ -80,11 +83,11 @@ export const sprite = () => {
     .pipe(gulp.dest('build/img'));
 }
 
-// Copy
+// Copy fonts
 
-export const copy = (done) => {
+export const fonts = (done) => {
   gulp.src('source/fonts/*.{woff2,woff}', { base: 'source' })
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('build/fonts'))
   done();
 }
 
@@ -127,15 +130,16 @@ const reload = (done) => {
 
 export const build = gulp.series(
   clean,
-  copy,
-  optimizeImages,
   gulp.parallel(
     styles,
     html,
     scripts,
+    ico,
+    images,
+    createWebp,
     svg,
     sprite,
-    createWebp
+    fonts
   ),
 );
 
@@ -144,15 +148,16 @@ export const build = gulp.series(
 
 export default gulp.series(
   clean,
-  copy,
-  copyImages,
   gulp.parallel(
     styles,
     html,
     scripts,
+    ico,
+    images,
+    createWebp,
     svg,
     sprite,
-    createWebp
+    fonts
   ),
   gulp.series(
     server,

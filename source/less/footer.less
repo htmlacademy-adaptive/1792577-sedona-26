@@ -2,6 +2,7 @@
   width: 320px;
   margin: 0 auto;
   text-align: center;
+  padding: 12px 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -12,6 +13,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 18px;
   }
 
   .social__list {
@@ -22,13 +24,15 @@
 
 @media (min-width: @desktop-width) {
   .footer {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
   }
 
   .footer__wrapper {
-    margin-left: 104px;
-    margin-right: 104px;
+    max-width: 960px;
+    width: 100%;
+    justify-content: space-between;
   }
 }

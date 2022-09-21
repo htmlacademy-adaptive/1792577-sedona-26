@@ -1,5 +1,11 @@
 .attractions {
   border: none;
+  padding-bottom: 0;
+  margin-bottom: 6px;
+}
+
+.attractions__action {
+  margin-bottom: 24px;
 }
 
 .attractions__container {
@@ -10,10 +16,11 @@
 
 .attractions__checkbox {
   margin-bottom: 36px;
+  position: relative;
 }
 
 .attractions__checkbox-text {
-  margin-left: 62px;
+  margin-left: 46px;
 }
 
 .attractions__checkbox-visually {
@@ -22,6 +29,17 @@
   height: 46px;
   background-color: @light-grey;
   border-radius: 4px;
+  top: -11px;
+  left: -15px;
+}
+
+.attractions__checkbox:hover {
+  background-color: #e5e5e5;
+}
+
+.attractions__checkbox-visually:active {
+  background-color: #d5d5d5;
+  opacity: 0.3;
 }
 
 .attractions__checkbox-form[type="checkbox"]:checked + .attractions__checkbox-visually::after {
@@ -39,18 +57,59 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 480px;
-    margin-left: auto;
-    margin-right: auto;
     justify-content: space-between;
+    margin: 27px auto 10px;
   }
 
   .attractions__checkbox {
     width: 224px;
+    margin-right: -14px;
+    margin-left: 14px;
+  }
+
+  .attractions__action {
+    padding: 0 103px;
+    margin-bottom: 32px;
+  }
+
+  .attractions__action::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 1px;
+    background-color: #dbdbdb;
+    position: relative;
+    margin-left: -100%;
+    left: -145px;
+  }
+
+  .attractions__action::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 1px;
+    background-color: #dbdbdb;
+    position: relative;
+    margin-right: -100%;
+    right: -71px;
+    top: -25px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .attractions__container {
     width: 960px;
+    margin: 57px auto 55px;
+  }
+
+  .attractions__action {
+    padding: 0 340px;
+  }
+
+  .attractions__checkbox {
+    margin-right: -34px;
+    margin-left: 47px;
   }
 }
