@@ -1,5 +1,11 @@
 .text {
   border: transparent;
+  margin: 0 0 60px;
+  padding: 0;
+}
+
+.text__action {
+  margin-bottom: 20px;
 }
 
 .text__coment {
@@ -26,6 +32,45 @@
 
 @media (min-width: @tablet-width) {
   .text__coment {
-    padding: 15px 300px 15px 15px;
+    padding: 15px;
+    width: 616px;
+  }
+
+  .text__action {
+    margin-bottom: 27px;
+  }
+
+  .text__action::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 1px;
+    background-color: #dbdbdb;
+    position: relative;
+    margin-left: -100%;
+    left: -96px;
+  }
+
+  .text__action::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 1px;
+    background-color: #dbdbdb;
+    position: relative;
+    margin-right: -100%;
+    right: -129px;
+  }
+
+  .text {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .text__coment {
+    width: 737px;
   }
 }

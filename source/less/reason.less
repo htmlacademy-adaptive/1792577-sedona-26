@@ -15,7 +15,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/triangle-mobile-town@2x.png");
-    background-size: 320px auto;
+    background-size: 320px 39px;
   }
 }
 
@@ -25,12 +25,38 @@
   background-color: @grey;
 }
 
+.road {
+  margin-bottom: -41px;
+}
+
+.road__border {
+  width: 284px;
+  height: 1px;
+  background: #d6d6d6;
+  mix-blend-mode: normal;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  left: 105px;
+  position: absolute;
+}
+
+.road__title {
+  margin-top: 15px;
+}
+
+.road__text {
+  margin-bottom: 37px;
+}
+
 .reason__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 12px;
 }
 
 .reason__number {
@@ -38,7 +64,7 @@
   font-size: 14px;
   line-height: 21px;
   text-align: center;
-  padding: 114px;
+  display: block;
 }
 
 .reason__text {
@@ -49,12 +75,20 @@
   text-transform: uppercase;
 }
 
-.reason__card-texts {
-  padding: 50px 20px;
+.town__card-text {
+  padding: 53px 18px 28px;
 }
 
 .sub-items {
-  margin: 23px 18px 50px;
+  position: relative;
+  width: 240px;
+  padding-left: 64px;
+  padding-top: 13px;
+  padding-bottom: 28px;
+}
+
+.reason__image {
+  display: block;
 }
 
 .sub-item__title {
@@ -69,6 +103,60 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+.sub-item__image {
+  position: absolute;
+  left: 18px;
+  width: 40px;
+  height: 40px;
+}
+
+.house {
+  top: 23px;
+}
+
+.eat {
+  top: 158px;
+}
+
+.present {
+  top: 272px;
+}
+
+.bridge__card-text {
+  padding: 23px;
+}
+
+.reason__card-text {
+  padding: 9px 36px 31px;
+  margin-bottom: -21px;
+}
+
+.road::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 87%;
+  height: 1px;
+  background-color: #dbdbdb;
+  position: relative;
+  margin-left: -100%;
+  left: 341px;
+}
+
+.road::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 87%;
+  height: 1px;
+  background-color: #dbdbdb;
+  position: relative;
+  margin-right: -100%;
+  left: 25px;
+  top: -25px;
 }
 
 @media (min-width: @tablet-width) {
@@ -89,6 +177,14 @@
     display: flex;
   }
 
+  .reason__number {
+    margin-bottom: 22px;
+  }
+
+  .town__card-text {
+    padding: 20px 21px 28px;
+  }
+
   .town {
     background-image: none;
     grid-column: 1/4;
@@ -100,16 +196,150 @@
 
   .sub-items {
     display: flex;
+    width: 768px;
     grid-column: 1/4;
+    padding: 0;
+  }
+
+  .sub-item {
+    padding: 138px 31px 34px;
+    text-align: center;
+    width: 195px;
   }
 
   .sub-item__title {
     font-size: 21px;
+  }
+
+  .house {
+    width: 75px;
+    height: 72px;
+    left: 90px;
+    top: 60px;
+  }
+
+  .eat {
+    width: 76px;
+    height: 67px;
+    left: 345px;
+    top: 64px;
+  }
+
+  .present {
+    width: 64px;
+    height: 75px;
+    left: 607px;
+    top: 57px;
+  }
+
+  .bridge__card-text {
+    order: 2;
+    padding: 23px 38px 28px;
+  }
+
+  .bridge__title {
+    padding: 0 15px;
+  }
+
+  .road {
+    margin-bottom: 0;
+  }
+
+  .road__border {
+    display: none;
+  }
+
+  .square__title {
+    padding: 13px 0 0;
+  }
+
+  .road__title {
+    padding: 19px 4px 0;
+  }
+
+  .tourist__title {
+    padding: 13px 18px 0;
+  }
+
+  .road__text {
+    padding: 14px 19px;
+    margin-bottom: 19px;
+  }
+
+  .road__number {
+    margin-bottom: -5px;
+  }
+
+  .tourist__text {
+    padding: 10px;
+  }
+
+  .tourist__number {
+    margin-bottom: 10px;
+  }
+
+  .road::before,
+  .road::after {
+    display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
   .reasons {
     width: 1200px;
+  }
+
+  .town__card-text {
+    padding: 20px 53px 28px;
+  }
+
+  .town__title {
+    margin: 28px 76px 13px;
+  }
+
+  .sub-items {
+    width: 1200px;
+  }
+
+  .sub-item {
+    padding: 138px 51px 55px;
+    text-align: center;
+    width: 300px;
+  }
+
+  .house {
+    left: 161px;
+  }
+
+  .eat {
+    left: 562px;
+  }
+
+  .present {
+    left: 966px;
+  }
+
+  .bridge__card-text {
+    padding: 20px 34px 17px;
+  }
+
+  .bridge__title {
+    margin: 28px 76px 13px;
+  }
+
+  .square__title {
+    margin: 22px 59px 13px;
+  }
+
+  .road__title {
+    margin: 13px 76px 14px;
+  }
+
+  .tourist__title {
+    margin: 22px 76px 14px;
+  }
+
+  .reason__card-text {
+    margin-bottom: 1px;
   }
 }

@@ -1,11 +1,11 @@
 .main-form__image {
   background-image: url("../img/triangle-mobile.png"), url("../img/background.webp");
-  background-position: 0 157px, 0 -140px;
+  background-position: 0 102px, 0 -230px;
   background-color: @basic;
   background-repeat: no-repeat;
-  min-height: 214px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 37px;
   width: 320px;
 
   @media (min-resolution: 2dppx) {
@@ -17,6 +17,7 @@
 .main-form__image-position {
   display: block;
   margin: auto;
+  padding: 53px 0 67px;
 }
 
 .main-form__wrapper {
@@ -35,6 +36,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 65px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/triangle-tablet@2x.png"), url("../img/background-tablet@2x.webp");
@@ -45,6 +47,10 @@
   .main-form__wrapper {
     width: 768px;
     margin: 0 auto;
+  }
+
+  .main-form__image-position {
+    padding: 94px 0 67px;
   }
 }
 
@@ -59,6 +65,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 114px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/triangle-desktop@2x.png"), url("../img/background-desktop@2x.webp");
@@ -69,5 +76,9 @@
   .main-form__wrapper {
     width: 1200px;
     margin: 0 auto;
+  }
+
+  .main-form__image-position {
+    padding-top: 102px;
   }
 }
