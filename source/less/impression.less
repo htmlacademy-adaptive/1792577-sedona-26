@@ -1,10 +1,11 @@
 .impression {
   border: none;
-  margin-bottom: 13px;
+  padding: 0;
+  margin-bottom: 22px;
 }
 
 .impression__action {
-  margin-bottom: 25px;
+  margin-bottom: 31px;
 }
 
 .impression__container {
@@ -13,6 +14,7 @@
 }
 
 .impression__radio {
+  margin-left: 13px;
   margin-bottom: 36px;
   position: relative;
 }
@@ -29,6 +31,13 @@
   border-radius: 50%;
   left: -13px;
   top: -10px;
+  cursor: pointer;
+}
+
+.impression__radio-form:focus {
+  border-color: #0000ff;
+  border-radius: 50%;
+  border-width: 3px;
 }
 
 .impression__radio-visually:hover {
@@ -37,7 +46,6 @@
 
 .impression__radio-visually:active {
   background-color: #d5d5d5;
-  opacity: 0.3;
 }
 
 .impression__radio-form[type="radio"]:checked + .impression__radio-visually::after {
@@ -53,10 +61,10 @@
 
 @media (min-width: @tablet-width) {
   .impression__container {
-    width: 546px;
+    width: 574px;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 25px;
+    margin-top: 32px;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
@@ -72,42 +80,52 @@
     content: "";
     display: inline-block;
     vertical-align: middle;
-    width: 100%;
+    width: 45%;
     height: 1px;
     background-color: #dbdbdb;
     position: relative;
     margin-left: -100%;
-    left: -71px;
+    left: -66px;
+    top: -3px;
   }
 
   .impression__action::after {
     content: "";
     display: inline-block;
     vertical-align: middle;
-    width: 100%;
+    width: 45%;
     height: 1px;
     background-color: #dbdbdb;
     position: relative;
     margin-right: -100%;
-    right: -71px;
+    right: -66px;
+    top: -3px;
   }
 
   .impression__radio {
-    margin-right: 25px;
+    margin-right: 39px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .impression {
-    margin-bottom: 40px;
+    margin-bottom: 46px;
+  }
+
+  .impression__action::before {
+    width: 100%;
+  }
+
+  .impression__action::after {
+    width: 100%;
   }
 
   .impression__container {
-    width: 817px;
-    margin-top: 43px;
+    width: 850px;
+    margin-top: 50px;
   }
 
   .impression__radio {
-    margin-right: -16px;
+    margin-right: -1px;
   }
 }
