@@ -5,7 +5,7 @@
   text-align: center;
   text-transform: uppercase;
   position: relative;
-  min-height: 55px;
+  min-height: 56px;
   width: 320px;
   margin-left: auto;
   margin-right: auto;
@@ -23,18 +23,22 @@
   cursor: pointer;
 }
 
-.nav--nojs .nav__toggle {
-  display: none;
-}
+// вот это все перенес в условия только для мобилок и все заработало
+// @media (max-width: 767px) {
+//   .nav--nojs .nav__toggle {
+//     display: none;
+//   }
 
-.nav--nojs .nav__wrapper {
-  position: static;
-  min-height: 0;
-}
+//   .nav--nojs .nav__wrapper {
+//     // position: static;
+//     display: block;
+//     min-height: 0;
+//   }
 
-.nav--nojs .nav__item {
-  display: block;
-}
+//   .nav--nojs .nav__item {
+//     display: block;
+//   }
+// }
 
 .nav--closed .nav__toggle::before {
   content: "";
@@ -106,6 +110,15 @@
   border-top: 1px solid #9ac2db;
 }
 
+.nav__link:hover {
+  background-color: #669ec0;
+}
+
+.nav__link:active {
+  color: #87b6d1;
+  background-color: #5496bd;
+}
+
 .last-link {
   margin-bottom: -171px;
 }
@@ -113,6 +126,20 @@
 @media (max-width: @mobile-width-only) {
   .nav--closed .nav__item {
     display: none;
+  }
+
+  .nav--nojs .nav__toggle {
+    display: none;
+  }
+
+  .nav--nojs .nav__wrapper {
+    // position: static;
+    display: block;
+    min-height: 0;
+  }
+
+  .nav--nojs .nav__item {
+    display: block;
   }
 }
 
@@ -127,39 +154,60 @@
     width: 768px;
   }
 
+  .nav__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 768px;
+    min-height: 56px;
+  }
+
   .nav__list {
     display: flex;
     flex-wrap: wrap;
-    position: relative;
     justify-content: space-between;
-    background-color: #ffffff;
-    height: 56px;
-    margin: 0 auto;
+    background-color: @white;
+    color: @black;
+    width: 768px;
+    position: relative;
+    margin: 0 8px 0 26px;
   }
 
-  .nav__group-first {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 326px;
+  .nav__item:nth-child(1) {
+    margin-right: 15px;
   }
 
-  .nav__group-second {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 307px;
+  .nav__item:nth-child(2) {
+    margin-right: 147px;
+  }
+
+  .nav__item:nth-child(3) {
+    margin-right: -6px;
+  }
+
+  .nav__item:nth-child(4) {
+    margin-right: -6px;
   }
 
   .nav__link {
     color: @black;
     border-bottom: none;
     border-top: none;
-    padding: 19px 25px;
+    padding: 18px 25px;
   }
 
   .nav__link--current {
     color: @brown;
+  }
+
+  .nav__link:hover {
+    color: #81b3d2;
+    background-color: @white;
+  }
+
+  .nav__link:active {
+    color: #b7b7b7;
+    background-color: @white;
   }
 
   .nav__toggle {
@@ -170,17 +218,37 @@
 @media (min-width: @desktop-width) {
   .nav {
     width: 1200px;
+    line-height: 19px;
   }
 
-  .nav__group-first {
-    width: 500px;
-  }
-
-  .nav__group-second {
-    width: 500px;
+  .nav__wrapper {
+    width: 1200px;
+    justify-content: start;
   }
 
   .nav__list {
-    justify-content: space-between;
+    width: 1200px;
+    margin: 0;
+  }
+
+  .nav__item:nth-child(1) {
+    margin-right: -4px;
+  }
+
+  .nav__item:nth-child(2) {
+    margin-right: 239px;
+  }
+
+  .nav__item:nth-child(3) {
+    margin-right: 0;
+  }
+
+  .nav__item:nth-child(4) {
+    margin-right: -1px;
+  }
+
+  .nav__link {
+    width: 240px;
+    padding: 19px 0;
   }
 }

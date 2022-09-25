@@ -1,22 +1,42 @@
 .user-name {
   border: none;
-  margin-bottom: 56px;
-}
-
-.user-name__input-text::-moz-placeholder {
-  color: @black;
-}
-
-.user-name__input-text::-webkit-input-placeholder {
-  color: @black;
+  padding: 0;
+  margin-bottom: 49px;
 }
 
 .user-name__input-text {
-  width: 250px;
+  margin-bottom: 15px;
+}
+
+@media (min-width: @tablet-width) {
+  .user-name {
+    margin-bottom: 65px;
+  }
+
+  .user-name__action {
+    margin-left: -1px;
+  }
+
+  .surname__title {
+    margin: 19px 0 0 13px;
+  }
+
+  .patronymic__title {
+    margin: 22px 0 0 13px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .user-name__input-text {
-    width: 400px;
+    width: 425px;
+    margin-bottom: -3px;
+  }
+
+  .user-name {
+    margin-bottom: 73px;
+  }
+
+  .user-name__action {
+    margin-left: 8px;
   }
 }

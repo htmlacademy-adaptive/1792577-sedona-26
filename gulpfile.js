@@ -48,14 +48,22 @@ const scripts = () => {
 // Copy favicon
 
 const ico = () => {
-  return gulp.src('*.ico')
+  return gulp.src('source/*.ico')
     .pipe(gulp.dest('build'));
 };
+
+// Copy manifest
+
+const manifest = (done) => {
+  gulp.src('source/manifest.webmanifest')
+  .pipe(gulp.dest('build'))
+  done();
+}
 
 // Images
 
 export const images = () => {
-  return gulp.src('source/img/*.{png,jpg}')
+  return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(squoosh())
     .pipe(gulp.dest('build/img'))
 }
@@ -71,7 +79,7 @@ export const createWebp = () => {
 // SVG
 
 export const svg = () =>
-  gulp.src('source/img/*.svg')
+  gulp.src('source/img/*.svg', '!source/img/icons/*.svg', '!source/img/sprite.svg')
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
@@ -87,7 +95,7 @@ export const sprite = () => {
 
 export const fonts = (done) => {
   gulp.src('source/fonts/*.{woff2,woff}', { base: 'source' })
-    .pipe(gulp.dest('build/fonts'))
+    .pipe(gulp.dest('build'))
   done();
 }
 
@@ -130,16 +138,17 @@ const reload = (done) => {
 
 export const build = gulp.series(
   clean,
+  images,
+  svg,
   gulp.parallel(
     styles,
     html,
     scripts,
     ico,
-    images,
     createWebp,
-    svg,
     sprite,
-    fonts
+    fonts,
+    manifest
   ),
 );
 
@@ -148,16 +157,17 @@ export const build = gulp.series(
 
 export default gulp.series(
   clean,
+  images,
+  svg,
   gulp.parallel(
     styles,
     html,
     scripts,
     ico,
-    images,
     createWebp,
-    svg,
     sprite,
-    fonts
+    fonts,
+    manifest
   ),
   gulp.series(
     server,
