@@ -1,17 +1,17 @@
 .attractions {
   border: none;
-  padding-bottom: 0;
-  margin-bottom: 6px;
+  padding: 0;
+  margin-bottom: 22px;
 }
 
 .attractions__action {
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }
 
 .attractions__container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
+  margin: 12px 15px 0;
 }
 
 .attractions__checkbox {
@@ -31,9 +31,10 @@
   border-radius: 4px;
   top: -11px;
   left: -15px;
+  cursor: pointer;
 }
 
-.attractions__checkbox:hover {
+.attractions__checkbox-visually:hover {
   background-color: #e5e5e5;
 }
 
@@ -42,13 +43,18 @@
   opacity: 0.3;
 }
 
+.attractions__checkbox-visually:focus {
+  border-color: #0000ff;
+  border-width: 3px;
+}
+
 .attractions__checkbox-form[type="checkbox"]:checked + .attractions__checkbox-visually::after {
   content: "";
   width: 22px;
   height: 16px;
   position: absolute;
-  top: 15px;
-  left: 13px;
+  top: 13px;
+  left: 11px;
   background-image: url("../img/tick.svg");
 }
 
@@ -58,7 +64,7 @@
     flex-wrap: wrap;
     width: 480px;
     justify-content: space-between;
-    margin: 27px auto 10px;
+    margin: 13px auto -6px;
   }
 
   .attractions__checkbox {
@@ -68,40 +74,46 @@
   }
 
   .attractions__action {
-    padding: 0 103px;
+    padding: 0 137px;
     margin-bottom: 32px;
+    position: relative;
+  }
+
+  .attractions__action span {
+    display: block;
   }
 
   .attractions__action::before {
     content: "";
     display: inline-block;
     vertical-align: middle;
-    width: 100%;
+    width: 30%;
     height: 1px;
     background-color: #dbdbdb;
-    position: relative;
-    margin-left: -100%;
-    left: -145px;
+    position: absolute;
+    margin-left: 0%;
+    left: -2px;
+    top: 23px;
   }
 
   .attractions__action::after {
     content: "";
     display: inline-block;
     vertical-align: middle;
-    width: 100%;
+    width: 30%;
     height: 1px;
     background-color: #dbdbdb;
-    position: relative;
-    margin-right: -100%;
-    right: -71px;
-    top: -25px;
+    position: absolute;
+    margin-right: 0%;
+    right: -2px;
+    top: 23px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .attractions__container {
-    width: 960px;
-    margin: 57px auto 55px;
+    width: 930px;
+    margin: 45px auto 75px;
   }
 
   .attractions__action {
@@ -109,7 +121,15 @@
   }
 
   .attractions__checkbox {
-    margin-right: -34px;
-    margin-left: 47px;
+    margin: 0;
+  }
+
+  .attractions__checkbox:nth-child(4) {
+    margin-right: -25px;
+    margin-left: -18px;
+  }
+
+  .attractions__checkbox:nth-child(1) {
+    margin-left: 46px;
   }
 }

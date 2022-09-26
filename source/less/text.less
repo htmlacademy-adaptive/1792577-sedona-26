@@ -1,6 +1,6 @@
 .text {
   border: transparent;
-  margin: 0 0 60px;
+  margin: 0 0 47px;
   padding: 0;
 }
 
@@ -10,11 +10,11 @@
 
 .text__coment {
   border: transparent;
-  padding: 15px;
+  padding: 17px;
 }
 
 .text__coment::-moz-placeholder {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Aria", sans-serif;
   color: #a9a9a9;
   font-size: 18px;
   font-weight: 700;
@@ -23,7 +23,7 @@
 }
 
 .text__coment::-webkit-input-placeholder {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Aria", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -44,33 +44,49 @@
     content: "";
     display: inline-block;
     vertical-align: middle;
-    width: 100%;
+    width: 49%;
     height: 1px;
     background-color: #dbdbdb;
     position: relative;
-    margin-left: -100%;
-    left: -96px;
+    margin-left: -57%;
+    left: -77px;
+    top: -3px;
   }
 
   .text__action::after {
     content: "";
     display: inline-block;
     vertical-align: middle;
-    width: 100%;
+    width: 50%;
     height: 1px;
     background-color: #dbdbdb;
     position: relative;
-    margin-right: -100%;
-    right: -129px;
+    margin-right: -58%;
+    right: -75px;
+    top: -3px;
   }
 
   .text {
-    margin-bottom: 50px;
+    margin-bottom: 56px;
   }
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .text__coment {
     width: 737px;
+  }
+
+  .text__action::before {
+    width: 113%;
+    margin-left: -141%;
+    left: -76px;
+    top: -3px;
+  }
+
+  .text__action::after {
+    width: 113%;
+    margin-right: -143%;
+    left: 71px;
+    top: -3px;
   }
 }

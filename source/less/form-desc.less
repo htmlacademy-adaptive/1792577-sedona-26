@@ -1,9 +1,14 @@
+.main-form-desc {
+  margin-bottom: 52px;
+}
+
 .main-form-desc__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 23px;
 }
 
 .main-form-desc__text {
@@ -13,23 +18,31 @@
   color: @black;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 100px;
 }
 
 @media (min-width: @tablet-width) {
   .main-form-desc {
-    width: 410px;
-    margin: 0 auto;
+    width: 440px;
+    margin: 0 auto 105px;
   }
 
   .main-form-desc__title {
     font-size: 30px;
+    margin-bottom: 22px;
+  }
+
+  .main-form-desc__text span {
+    display: block;
   }
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .main-form-desc {
     width: 435px;
-    margin: 0 auto;
+    margin: 0 auto 69px;
+  }
+
+  .main-form-desc__title {
+    margin-bottom: 30px;
   }
 }
