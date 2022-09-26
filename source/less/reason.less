@@ -48,7 +48,12 @@
 }
 
 .road__text {
-  margin-bottom: 37px;
+  margin: 0 23px 40px;
+}
+
+.tourist__text {
+  margin: 0 12px 14px;
+  padding: 0;
 }
 
 .reason__title {
@@ -75,17 +80,18 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  padding: 0 7px;
 }
 
 .town__card-text {
-  padding: 50px 18px 24px;
+  padding: 50px 18px 26px;
 }
 
 .sub-items {
   position: relative;
   width: 240px;
   padding-left: 64px;
-  padding-top: 15px;
+  padding-top: 12px;
   padding-bottom: 24px;
 }
 
@@ -93,8 +99,8 @@
   display: block;
 }
 
-.sub-item:nth-child(1) {
-  margin-bottom: 32px;
+.sub-item {
+  margin-bottom: 29px;
 }
 
 .sub-item:nth-child(2) {
@@ -141,11 +147,11 @@
 }
 
 .bridge__card-text {
-  padding: 23px 23px 18px;
+  padding: 21px 23px 19px;
 }
 
 .reason__card-text {
-  padding: 10px 36px 0;
+  padding: 8px 13px 0;
   margin-bottom: -14px;
 }
 
@@ -222,6 +228,7 @@
     width: 768px;
     grid-column: 1/4;
     padding: 0;
+    margin-bottom: 3px;
   }
 
   .sub-item {
@@ -230,8 +237,8 @@
     width: 195px;
   }
 
-  .sub-item__text span {
-    display: block;
+  .eat-container__title {
+    padding: 0 18px;
   }
 
   .sub-item__title {
@@ -266,12 +273,15 @@
 
   .bridge__card-text {
     order: 2;
-    padding: 23px 38px 28px;
+    padding: 23px 38px 0;
   }
 
   .bridge__title {
     padding: 0 15px;
-    width: 149px;
+  }
+
+  .bridge__title span {
+    display: block;
   }
 
   .road {
@@ -283,19 +293,19 @@
   }
 
   .square__title {
-    padding: 13px 0 0;
+    padding: 13px 9px 0;
   }
 
   .road__title {
-    padding: 19px 4px 0;
+    padding: 19px 31px 0;
   }
 
   .tourist__title {
-    padding: 13px 18px 0;
+    padding: 13px 45px 0;
   }
 
   .road__text {
-    padding: 14px 19px;
+    padding: 29px 19px;
     margin-bottom: 19px;
   }
 
@@ -308,7 +318,7 @@
   }
 
   .tourist__text {
-    padding: 10px;
+    padding: 14px 14px 18px;
   }
 
   .tourist__number {
@@ -324,6 +334,10 @@
 @media (min-width: @desktop-width) {
   .reasons {
     width: 1200px;
+  }
+
+  .reason {
+    margin-bottom: 5px;
   }
 
   .reason__text {
@@ -348,7 +362,7 @@
 
   .sub-items {
     width: 1200px;
-    margin-bottom: 22px;
+    margin-bottom: 25px;
   }
 
   .sub-item {
@@ -369,8 +383,12 @@
     left: 966px;
   }
 
+  .eat-container__title {
+    padding: 0 6px;
+  }
+
   .bridge__card-text {
-    padding: 20px 34px 17px;
+    padding: 25px 34px 17px;
   }
 
   .bridge__title {
@@ -379,26 +397,31 @@
 
   .square__title {
     margin: 22px 59px 13px;
+    padding: 16px 40px 0;
   }
 
   .tourist__number {
-    margin-bottom: 18px;
+    margin-bottom: 21px;
   }
 
   .road__title {
-    margin: 13px 76px 14px;
+    margin: 17px 76px 14px;
+  }
+
+  .road__number {
+    margin-bottom: 10px;
   }
 
   .road__text {
-    padding: 12px 27px;
+    padding: 12px 11px;
   }
 
   .tourist__title {
-    margin: 22px 76px 14px;
+    margin: 24px 73px 14px;
   }
 
   .reason__card-text {
-    margin-bottom: -4px;
-    padding-bottom: 26px;
+    margin-bottom: 3px;
+    padding: 6px 33px 26px;
   }
 }

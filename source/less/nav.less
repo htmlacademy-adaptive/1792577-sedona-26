@@ -23,23 +23,6 @@
   cursor: pointer;
 }
 
-// вот это все перенес в условия только для мобилок и все заработало
-// @media (max-width: 767px) {
-//   .nav--nojs .nav__toggle {
-//     display: none;
-//   }
-
-//   .nav--nojs .nav__wrapper {
-//     // position: static;
-//     display: block;
-//     min-height: 0;
-//   }
-
-//   .nav--nojs .nav__item {
-//     display: block;
-//   }
-// }
-
 .nav--closed .nav__toggle::before {
   content: "";
   position: absolute;
@@ -115,7 +98,7 @@
 }
 
 .nav__link:active {
-  color: #87b6d1;
+  color: #ffffff 0.3;
   background-color: #5496bd;
 }
 
@@ -133,7 +116,7 @@
   }
 
   .nav--nojs .nav__wrapper {
-    // position: static;
+    position: static;
     display: block;
     min-height: 0;
   }
